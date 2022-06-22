@@ -1,0 +1,15 @@
+2022-06-12 18:11:37,108 - Task - INFO - Inicio del programa
+2022-06-12 18:11:37,108 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>CROP_IMAGE_soldado_original</test_name>
+    <task name="crop"><x>85</x><y>173</y><width>47</width><height>35</height></task>
+
+    <load_network name="personas_ae_factory">trainnedNN/PersonasAeFactory/2022_06_04_12_48_45-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>256</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><single_image_loader image_path="results\PersonasAeFactory\2022_06_12_18_05_29-Test_CROP_BSDS100_Originales\parcial\71.png" /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <NormaMapper />
+    </mappers>
+</config>

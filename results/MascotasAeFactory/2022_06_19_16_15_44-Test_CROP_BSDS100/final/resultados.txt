@@ -1,0 +1,21 @@
+2022-06-19 16:15:44,282 - Task - INFO - Inicio del programa
+2022-06-19 16:15:44,282 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>Test_CROP_BSDS100</test_name>
+    <task name="test" />
+    <load_network name="mascotas_ae_factory">trainnedNN/MascotasAeFactory/2022_06_04_00_24_46-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>64</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><default_loader dataset_name="set5\\SR_testing_datasets\\BSDS100" train_percentage="0" /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <CropMapper size="256" />
+        <NormaMapper />
+    </mappers>
+</config>
+2022-06-19 16:15:45,656 - Neural network - DEBUG - El PSNR ES: 24.502964
+2022-06-19 16:15:45,656 - Neural network - DEBUG - El SSIM ES: 0.6763232
+2022-06-19 16:15:50,318 - Neural network - DEBUG - El PSNR ES: 24.152285
+2022-06-19 16:15:50,318 - Neural network - DEBUG - El SSIM ES: 0.64948446
+2022-06-19 16:15:53,180 - Neural network - DEBUG - El PSNR MEDIO ES: 24.327624320983887
+2022-06-19 16:15:53,180 - Neural network - DEBUG - El SSIM MEDIO ES: 0.6629038155078888

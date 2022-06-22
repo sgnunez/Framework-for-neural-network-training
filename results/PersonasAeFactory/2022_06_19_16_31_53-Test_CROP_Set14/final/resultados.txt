@@ -1,0 +1,20 @@
+2022-06-19 16:31:53,509 - Task - INFO - Inicio del programa
+2022-06-19 16:31:53,509 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>Test_CROP_Set14</test_name>
+    <task name="test" />
+    <load_network name="personas_ae_factory">trainnedNN/PersonasAeFactory/2022_06_04_12_48_45-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>256</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><default_loader dataset_name="set5\\SR_testing_datasets\\Set14" train_percentage="0" /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <ToRGBImages />
+        <CropMapper size="256" />
+        <NormaMapper />
+    </mappers>
+</config>
+2022-06-19 16:31:54,545 - Neural network - DEBUG - El PSNR ES: 25.983118
+2022-06-19 16:31:54,545 - Neural network - DEBUG - El SSIM ES: 0.7663671
+2022-06-19 16:31:56,591 - Neural network - DEBUG - El PSNR MEDIO ES: 25.983118057250977
+2022-06-19 16:31:56,591 - Neural network - DEBUG - El SSIM MEDIO ES: 0.7663670778274536

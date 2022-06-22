@@ -1,0 +1,16 @@
+2022-06-12 18:16:25,889 - Task - INFO - Inicio del programa
+2022-06-12 18:16:25,889 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>CROP_IMAGE</test_name>
+    <task name="crop"><x>85</x><y>173</y><width>47</width><height>35</height></task>
+    <load_network name="mascotas_ae_factory">trainnedNN/MascotasAeFactory/2022_06_04_00_24_46-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>64</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><single_image_loader image_path="results\\MascotasAeFactory\\2022_06_12_18_02_01-Test_CROP_BSDS100\\parcial\\71.png" /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <ToRGBImages />
+        <CropMapper size="256" />
+        <NormaMapper />
+    </mappers>
+</config>

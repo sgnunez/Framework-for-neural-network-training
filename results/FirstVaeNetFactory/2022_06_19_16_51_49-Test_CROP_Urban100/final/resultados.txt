@@ -1,0 +1,22 @@
+2022-06-19 16:51:49,237 - Task - INFO - Inicio del programa
+2022-06-19 16:51:49,238 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>Test_CROP_Urban100</test_name>
+    <task name="test" />
+    <load_network name="first_vae_net_factory">trainnedNN/FirstVaeNetFactory/2022_06_13_22_38_58-tercer_entrenamiento_personas_generacion/99</load_network>
+    <batch_size>64</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><default_loader dataset_name="set5\\SR_testing_datasets\\Urban100" train_percentage="0" /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <ToRGBImages />
+        <CropMapper size="128" />
+        <NormaMapper />
+    </mappers>
+</config>
+2022-06-19 16:51:56,301 - Neural network - DEBUG - El PSNR ES: 14.792814
+2022-06-19 16:51:56,301 - Neural network - DEBUG - El SSIM ES: 0.25063908
+2022-06-19 16:51:59,447 - Neural network - DEBUG - El PSNR ES: 15.25422
+2022-06-19 16:51:59,447 - Neural network - DEBUG - El SSIM ES: 0.26950166
+2022-06-19 16:52:01,376 - Neural network - DEBUG - El PSNR MEDIO ES: 15.02351713180542
+2022-06-19 16:52:01,376 - Neural network - DEBUG - El SSIM MEDIO ES: 0.2600703686475754

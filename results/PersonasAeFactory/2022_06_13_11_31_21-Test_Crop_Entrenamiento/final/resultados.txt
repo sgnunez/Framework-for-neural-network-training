@@ -1,0 +1,117 @@
+2022-06-13 11:31:21,607 - Task - INFO - Inicio del programa
+2022-06-13 11:31:21,607 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>Test_Crop_Entrenamiento</test_name>
+    <task name="test" />
+    <load_network name="personas_ae_factory">trainnedNN/PersonasAeFactory/2022_06_04_12_48_45-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>256</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><personas1024_dataset /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <CropMapper size="256" />
+        <NormaMapper />
+    </mappers>
+</config>
+2022-06-13 11:31:26,520 - Neural network - DEBUG - El PSNR ES: 31.000957
+2022-06-13 11:31:26,520 - Neural network - DEBUG - El SSIM ES: 0.8886277
+2022-06-13 11:31:47,492 - Neural network - DEBUG - El PSNR ES: 31.13526
+2022-06-13 11:31:47,492 - Neural network - DEBUG - El SSIM ES: 0.8902235
+2022-06-13 11:32:07,973 - Neural network - DEBUG - El PSNR ES: 31.274452
+2022-06-13 11:32:07,973 - Neural network - DEBUG - El SSIM ES: 0.8918876
+2022-06-13 11:32:28,670 - Neural network - DEBUG - El PSNR ES: 31.241844
+2022-06-13 11:32:28,670 - Neural network - DEBUG - El SSIM ES: 0.89224494
+2022-06-13 11:32:49,343 - Neural network - DEBUG - El PSNR ES: 31.24067
+2022-06-13 11:32:49,343 - Neural network - DEBUG - El SSIM ES: 0.8930921
+2022-06-13 11:33:11,465 - Neural network - DEBUG - El PSNR ES: 31.370987
+2022-06-13 11:33:11,465 - Neural network - DEBUG - El SSIM ES: 0.8932914
+2022-06-13 11:33:32,118 - Neural network - DEBUG - El PSNR ES: 31.436638
+2022-06-13 11:33:32,118 - Neural network - DEBUG - El SSIM ES: 0.8971714
+2022-06-13 11:33:52,623 - Neural network - DEBUG - El PSNR ES: 31.10159
+2022-06-13 11:33:52,624 - Neural network - DEBUG - El SSIM ES: 0.89180976
+2022-06-13 11:34:12,944 - Neural network - DEBUG - El PSNR ES: 31.459871
+2022-06-13 11:34:12,944 - Neural network - DEBUG - El SSIM ES: 0.8969782
+2022-06-13 11:34:33,293 - Neural network - DEBUG - El PSNR ES: 31.363396
+2022-06-13 11:34:33,293 - Neural network - DEBUG - El SSIM ES: 0.8964564
+2022-06-13 11:34:53,489 - Neural network - DEBUG - El PSNR ES: 30.962666
+2022-06-13 11:34:53,489 - Neural network - DEBUG - El SSIM ES: 0.88919336
+2022-06-13 11:35:13,529 - Neural network - DEBUG - El PSNR ES: 31.225996
+2022-06-13 11:35:13,529 - Neural network - DEBUG - El SSIM ES: 0.8923486
+2022-06-13 11:35:34,029 - Neural network - DEBUG - El PSNR ES: 31.21368
+2022-06-13 11:35:34,029 - Neural network - DEBUG - El SSIM ES: 0.89544225
+2022-06-13 11:35:54,923 - Neural network - DEBUG - El PSNR ES: 31.276041
+2022-06-13 11:35:54,923 - Neural network - DEBUG - El SSIM ES: 0.894575
+2022-06-13 11:36:14,668 - Neural network - DEBUG - El PSNR ES: 31.45393
+2022-06-13 11:36:14,668 - Neural network - DEBUG - El SSIM ES: 0.8953092
+2022-06-13 11:36:35,232 - Neural network - DEBUG - El PSNR ES: 31.155798
+2022-06-13 11:36:35,232 - Neural network - DEBUG - El SSIM ES: 0.8948351
+2022-06-13 11:36:56,158 - Neural network - DEBUG - El PSNR ES: 31.357105
+2022-06-13 11:36:56,158 - Neural network - DEBUG - El SSIM ES: 0.89821637
+2022-06-13 11:37:16,294 - Neural network - DEBUG - El PSNR ES: 31.325317
+2022-06-13 11:37:16,297 - Neural network - DEBUG - El SSIM ES: 0.89320153
+2022-06-13 11:37:37,324 - Neural network - DEBUG - El PSNR ES: 31.135069
+2022-06-13 11:37:37,324 - Neural network - DEBUG - El SSIM ES: 0.8950352
+2022-06-13 11:37:57,836 - Neural network - DEBUG - El PSNR ES: 31.087698
+2022-06-13 11:37:57,836 - Neural network - DEBUG - El SSIM ES: 0.8928746
+2022-06-13 11:38:18,484 - Neural network - DEBUG - El PSNR ES: 31.075865
+2022-06-13 11:38:18,484 - Neural network - DEBUG - El SSIM ES: 0.8885368
+2022-06-13 11:38:39,593 - Neural network - DEBUG - El PSNR ES: 31.192291
+2022-06-13 11:38:39,593 - Neural network - DEBUG - El SSIM ES: 0.8951191
+2022-06-13 11:38:59,334 - Neural network - DEBUG - El PSNR ES: 31.014986
+2022-06-13 11:38:59,334 - Neural network - DEBUG - El SSIM ES: 0.8891301
+2022-06-13 11:39:19,272 - Neural network - DEBUG - El PSNR ES: 31.033348
+2022-06-13 11:39:19,272 - Neural network - DEBUG - El SSIM ES: 0.8901657
+2022-06-13 11:39:39,523 - Neural network - DEBUG - El PSNR ES: 31.050705
+2022-06-13 11:39:39,523 - Neural network - DEBUG - El SSIM ES: 0.89060616
+2022-06-13 11:39:59,159 - Neural network - DEBUG - El PSNR ES: 31.070486
+2022-06-13 11:39:59,159 - Neural network - DEBUG - El SSIM ES: 0.8890246
+2022-06-13 11:40:19,170 - Neural network - DEBUG - El PSNR ES: 31.115448
+2022-06-13 11:40:19,170 - Neural network - DEBUG - El SSIM ES: 0.8941083
+2022-06-13 11:40:39,415 - Neural network - DEBUG - El PSNR ES: 31.15143
+2022-06-13 11:40:39,415 - Neural network - DEBUG - El SSIM ES: 0.8921485
+2022-06-13 11:40:59,687 - Neural network - DEBUG - El PSNR ES: 30.950684
+2022-06-13 11:40:59,687 - Neural network - DEBUG - El SSIM ES: 0.89147365
+2022-06-13 11:41:19,575 - Neural network - DEBUG - El PSNR ES: 31.095806
+2022-06-13 11:41:19,575 - Neural network - DEBUG - El SSIM ES: 0.891369
+2022-06-13 11:41:40,227 - Neural network - DEBUG - El PSNR ES: 31.23667
+2022-06-13 11:41:40,227 - Neural network - DEBUG - El SSIM ES: 0.89404815
+2022-06-13 11:42:00,765 - Neural network - DEBUG - El PSNR ES: 31.330555
+2022-06-13 11:42:00,765 - Neural network - DEBUG - El SSIM ES: 0.8906042
+2022-06-13 11:42:20,761 - Neural network - DEBUG - El PSNR ES: 31.240335
+2022-06-13 11:42:20,761 - Neural network - DEBUG - El SSIM ES: 0.8941591
+2022-06-13 11:42:42,761 - Neural network - DEBUG - El PSNR ES: 31.301239
+2022-06-13 11:42:42,761 - Neural network - DEBUG - El SSIM ES: 0.8953427
+2022-06-13 11:43:04,298 - Neural network - DEBUG - El PSNR ES: 31.101059
+2022-06-13 11:43:04,298 - Neural network - DEBUG - El SSIM ES: 0.8903865
+2022-06-13 11:43:24,578 - Neural network - DEBUG - El PSNR ES: 30.840416
+2022-06-13 11:43:24,578 - Neural network - DEBUG - El SSIM ES: 0.8877792
+2022-06-13 11:43:45,622 - Neural network - DEBUG - El PSNR ES: 31.327888
+2022-06-13 11:43:45,622 - Neural network - DEBUG - El SSIM ES: 0.8922559
+2022-06-13 11:44:05,797 - Neural network - DEBUG - El PSNR ES: 31.30991
+2022-06-13 11:44:05,797 - Neural network - DEBUG - El SSIM ES: 0.8939826
+2022-06-13 11:44:25,634 - Neural network - DEBUG - El PSNR ES: 31.105768
+2022-06-13 11:44:25,634 - Neural network - DEBUG - El SSIM ES: 0.88980293
+2022-06-13 11:44:46,634 - Neural network - DEBUG - El PSNR ES: 31.137085
+2022-06-13 11:44:46,634 - Neural network - DEBUG - El SSIM ES: 0.8928268
+2022-06-13 11:45:06,812 - Neural network - DEBUG - El PSNR ES: 31.0928
+2022-06-13 11:45:06,812 - Neural network - DEBUG - El SSIM ES: 0.8927573
+2022-06-13 11:45:27,749 - Neural network - DEBUG - El PSNR ES: 31.204918
+2022-06-13 11:45:27,749 - Neural network - DEBUG - El SSIM ES: 0.8925773
+2022-06-13 11:45:49,840 - Neural network - DEBUG - El PSNR ES: 31.291893
+2022-06-13 11:45:49,841 - Neural network - DEBUG - El SSIM ES: 0.8932544
+2022-06-13 11:46:10,401 - Neural network - DEBUG - El PSNR ES: 31.247055
+2022-06-13 11:46:10,401 - Neural network - DEBUG - El SSIM ES: 0.89252436
+2022-06-13 11:46:30,196 - Neural network - DEBUG - El PSNR ES: 31.234688
+2022-06-13 11:46:30,196 - Neural network - DEBUG - El SSIM ES: 0.8918026
+2022-06-13 11:46:51,398 - Neural network - DEBUG - El PSNR ES: 31.162832
+2022-06-13 11:46:51,398 - Neural network - DEBUG - El SSIM ES: 0.8943796
+2022-06-13 11:47:11,722 - Neural network - DEBUG - El PSNR ES: 31.149048
+2022-06-13 11:47:11,722 - Neural network - DEBUG - El SSIM ES: 0.8933381
+2022-06-13 11:47:31,893 - Neural network - DEBUG - El PSNR ES: 31.256968
+2022-06-13 11:47:31,893 - Neural network - DEBUG - El SSIM ES: 0.8945379
+2022-06-13 11:47:54,171 - Neural network - DEBUG - El PSNR ES: 31.199268
+2022-06-13 11:47:54,171 - Neural network - DEBUG - El SSIM ES: 0.89379334
+2022-06-13 11:48:14,679 - Neural network - DEBUG - El PSNR ES: 31.112225
+2022-06-13 11:48:14,679 - Neural network - DEBUG - El SSIM ES: 0.8905602
+2022-06-13 11:48:32,704 - Neural network - DEBUG - El PSNR MEDIO ES: 31.189052658081053
+2022-06-13 11:48:32,704 - Neural network - DEBUG - El SSIM MEDIO ES: 0.8927041864395142

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <test_name>test_entrenamiento_personas</test_name>
+    <task name="test"/>
+    <load_network name="first_vae_net_factory">trainnedNN\FirstVaeNetFactory\2022_06_13_18_34_55-tercer_entrenamiento_personas\99</load_network>
+    <batch_size>256</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><personas1024_dataset/></dataset_loader>
+    <mappers>
+        <FileReadPngMapper/>
+        <ResizeMapper size="128"/>
+        <NormaMapper/>
+    </mappers>
+    <network_factory name="first_vae_net_factory">
+        <optimizer><Adam learning_rate="0.0001"/></optimizer>
+        <loss><MeanSquaredError/></loss>
+    </network_factory>
+</config>

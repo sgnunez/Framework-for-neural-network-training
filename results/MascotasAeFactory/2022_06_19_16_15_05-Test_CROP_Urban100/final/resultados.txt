@@ -1,0 +1,22 @@
+2022-06-19 16:15:05,936 - Task - INFO - Inicio del programa
+2022-06-19 16:15:05,937 - Task - INFO - Parámetros utilizados: 
+<config>
+    <test_name>Test_CROP_Urban100</test_name>
+    <task name="test" />
+    <load_network name="mascotas_ae_factory">trainnedNN/MascotasAeFactory/2022_06_04_00_24_46-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>64</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><default_loader dataset_name="set5\\SR_testing_datasets\\Urban100" train_percentage="0" /></dataset_loader>
+    <mappers>
+        <FileReadPngMapper />
+        <ToRGBImages />
+        <CropMapper size="256" />
+        <NormaMapper />
+    </mappers>
+</config>
+2022-06-19 16:15:18,066 - Neural network - DEBUG - El PSNR ES: 21.466808
+2022-06-19 16:15:18,066 - Neural network - DEBUG - El SSIM ES: 0.60609233
+2022-06-19 16:15:23,496 - Neural network - DEBUG - El PSNR ES: 21.66159
+2022-06-19 16:15:23,496 - Neural network - DEBUG - El SSIM ES: 0.61922234
+2022-06-19 16:15:26,445 - Neural network - DEBUG - El PSNR MEDIO ES: 21.564199447631836
+2022-06-19 16:15:26,445 - Neural network - DEBUG - El SSIM MEDIO ES: 0.6126573383808136

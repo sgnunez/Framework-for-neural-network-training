@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <test_name>Test_CROP_Urban100</test_name>
+    <task name="test"/>
+    <load_network name="first_vae_net_factory">trainnedNN/FirstVaeNetFactory/2022_06_13_22_38_58-tercer_entrenamiento_personas_generacion/99</load_network>
+    <batch_size>64</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><default_loader dataset_name="set5\\SR_testing_datasets\\Urban100" train_percentage="0"/></dataset_loader>
+    <mappers>
+        <FileReadPngMapper/>
+        <ToRGBImages/>
+        <CropMapper size="128"/>
+        <NormaMapper/>
+    </mappers>
+</config>

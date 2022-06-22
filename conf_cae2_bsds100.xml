@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <test_name>Test_CROP_BSDS100</test_name>
+    <task name="test"/>
+    <load_network name="personas_ae_factory">trainnedNN/PersonasAeFactory/2022_06_04_12_48_45-Segundo_entrenamiento_con_personas_256x256/99</load_network>
+    <batch_size>256</batch_size>
+    <shuffle_size>1000</shuffle_size>
+    <dataset_loader><default_loader dataset_name="set5\\SR_testing_datasets\\BSDS100" train_percentage="0"/></dataset_loader>
+    <mappers>
+        <FileReadPngMapper/>
+        <CropMapper size="256"/>
+        <NormaMapper/>
+    </mappers>
+</config>

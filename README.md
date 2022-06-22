@@ -88,7 +88,7 @@ Es importante destacar que en este proyecto no se incluyen los dataset utilizado
 información más detallada sobre los dataset y cómo obtenerlos.
 
 Por último, se debe tener en cuenta que en la versión de esta documentación subida a moovi no se incluyen las redes neuronales entrenadas por limitaciones de espacio.
-En caso de necesitarse estas se pueden descargar desde el siguiente enlance:
+En caso de necesitarse estas se pueden descargar desde el siguiente enlance: https://github.com/sgnunez/Framework-for-neural-network-training.git
 El contenido se debe incluir en la carpeta "99" dentro del entrenamiento correspondiente según lo descrito en el árbol de directorios. 
 Se podrían incluir en cualquier ruta pero en ese caso sería necesario modificar los ficheros de configuración
 
